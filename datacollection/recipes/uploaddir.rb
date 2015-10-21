@@ -4,6 +4,6 @@ node[:deploy].each do |app_name, deploy|
 	directory "#{app_root}/uploads" do
 		mode 0777
 		recursive true
-		action create
+		action :create
 	end 
 end
